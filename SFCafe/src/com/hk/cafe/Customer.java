@@ -11,5 +11,13 @@ public class Customer {
 		int selectedIdx = scan.nextInt();
 		return mt.choiceMenu(selectedIdx);
 	}
+	
+	public void drink(Coffee coffee) {
+		if(coffee == null) {
+			System.out.println("커피를 마실 수 없습니다.");
+			return;
+		} 
+		System.out.printf("%s을(를) 마신다.\n", coffee.getName());		
+	}
 
 }

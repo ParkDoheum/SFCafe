@@ -12,4 +12,8 @@ public class Coffee {
 		name = mi.getMenuName();
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
 }
