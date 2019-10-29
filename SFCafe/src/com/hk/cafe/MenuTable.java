@@ -22,7 +22,26 @@ public class MenuTable {
 					, no++, mi.getMenuName(), mi.getMenuPrice());
 		}
 	}
+	
+	//메뉴 선택
+	public MenuItem choiceMenu(int idx) {
+		int targetIdx = idx - 1;
+		if(targetIdx < 0 || targetIdx >= menus.size()) {
+			return null;
+		}		
+		return menus.get(idx - 1);
+	}
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
