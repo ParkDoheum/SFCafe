@@ -15,7 +15,17 @@ public class MenuTable {
 		menus.add(new MenuItem("에스프레소", 2500));		
 	}
 	
-	public ______ showMenus(      ) {
-		
+	public void showMenus() {
+		int no = 1;
+		for(MenuItem mi : menus) {
+			System.out.printf("%d. %s - (%,d원)\n"
+					, no++, mi.getMenuName(), mi.getMenuPrice());
+		}
 	}
 }
+
+
+
+
+
+
